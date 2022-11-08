@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>
+                        R$ Real Brasileiro
+                    </option>
+                </select>
+            </label>
+            <label>
+                Converter <b>Para</b>
+                <select id="current-select">
+                    <option>
+                        US$ Dólar Americano
+                    </option>
+                    <option>
+                        € Euro
+                    </option>
+                    <option>
+                        Bitcoin
+                    </option>
+                </select>
+            </label>
+            <label>
+                Valor
+               <input type="number" name="null" id="input-reais"  placeholder="Digite um valor">
+            </label>
+            <button id="convert-button" type="button">Converter</button> 
+        </main>
+        <Section>
+            <div class="caixa">
+                <img src="./assets/brasil 2.svg" alt="bandeira do brasil">
+                <p class="current-name"> Real brasileiro</p>
+                <p class="current-value"  id="current-real" >R$0,00</p>   
+            </div>
+            <img class="arrow-image" src="./assets/Vector.png">
+            <div class="caixa">
+                <img id="currentimg" src="./assets/estados-unidos (1) 1.svg" alt="bandeira do estados unidos">
+                <p class="current-name" id="currentname">Dólar Americano</p>
+                <p  class="current-value"  id="currencyValue"></p>   
+            </div>
+        </Section>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
